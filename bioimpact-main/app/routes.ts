@@ -10,4 +10,5 @@ export default [
   route("verify-email", "routes/verify-email.ts"),
   route("dashboard", "routes/dashboard.tsx"),
   route("cargando", "routes/cargando.tsx"),
+  route("api/check-status", "routes/api.check-status.ts"),
 ] satisfies RouteConfig;

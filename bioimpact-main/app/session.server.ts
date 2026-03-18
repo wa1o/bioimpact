@@ -1,9 +1,10 @@
+import { env } from "process";
 import { createCookieSessionStorage } from "react-router";
 
 export const sessionStorage = createCookieSessionStorage({
   cookie: {
     name:     "__session",
-    secrets:  [process.env.SESSION_SECRET ?? "dev-secret-cambiame"],
+    secrets:  [process.env.SESSION_SECRET ?? "23c8733220e0b3e4e3f8926eb482f908ab9ea3c4b1e5c8a9f0e7b2d9f"],
     sameSite: "lax",
     httpOnly: true,  
     secure:   process.env.NODE_ENV === "production",
